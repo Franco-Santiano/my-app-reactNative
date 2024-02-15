@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useStatew } from "react";
 import Card from "./Card";
 import { Image, Pressable, StyleSheet, Text, useWindowDimensions } from "react-native";
 
