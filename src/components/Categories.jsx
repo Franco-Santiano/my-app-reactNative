@@ -1,15 +1,15 @@
-import { FlatList, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import categories from "../data/categories.json";
 import CategoryItem from "./CategoyItem";
 
 
-function Categories({ setCategorySelected }) {
+function Categories({navigation}) {
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList
         data={categories}
         renderItem={({ item }) => (
-          <CategoryItem setCategorySelected={setCategorySelected} category={item} />
+          <CategoryItem navigation={navigation} category={item} />
         )}
         keyExtractor={(category) => category}
       />
@@ -18,3 +18,10 @@ function Categories({ setCategorySelected }) {
 }
 
 export default Categories;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: "100%",
+  },
+});

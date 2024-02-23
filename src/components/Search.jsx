@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Pressable, StyleSheet,Text, TextInput, View } from "react-native";
-import {Entypo} from "@expo/vector-icons"
-import {AntDesign} from "@expo/vector-icons"
+import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 const Search = ({ onSearch }) => {
   const [input, setInput] = useState("");
